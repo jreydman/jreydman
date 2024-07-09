@@ -23,7 +23,7 @@
                         /mmm/        /mmm/        /mmm/
  
 ┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
-└─(12:00:01)──○ pgpobs --stats --table                                                        ○──(Fri,Jul24)─┘
+└─(12:00:01)──○ pgpobs --stats --table                                                        ○──   (Fri,Jul24)─┘
 ╔═════════════════╦═══════╗
 ║    Category     ║ Score ║
 ╠═════════════════╬═══════╣
