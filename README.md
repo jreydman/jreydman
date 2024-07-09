@@ -66,7 +66,7 @@ I've got accepted into NURE, class of 2024. Yeah, just finished a long period of
 2. SAM Stack (https://stackshare.io/jreydman/maintenance).
 3. Cluster architecture
 
-┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(bibaalterhubrz@WebDucks:pts/0)─┐
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
 └─(12:00:07)──○ cat interests.txt                                                            ○──(Fri,Jul24)─┘
 Music
 Reading
