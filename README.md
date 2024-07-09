@@ -28,8 +28,8 @@
                          '-`  |_|     '-`  |_|     '-`  |_|
                         /mmm/        /mmm/        /mmm/
  
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:01)──○ eymen --stats --table                                                        ○──(Fri,Mar18)─┘
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:01)──○ pgpobs --stats --table                                                        ○──(Fri,Jul24)─┘
 ╔═════════════════╦═══════╗
 ║    Category     ║ Score ║
 ╠═════════════════╬═══════╣
@@ -40,72 +40,59 @@
 ╚═════════════════╩═══════╝
 
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:02)──○ eymen --whoishe                                                              ○──(Fri,Mar18)─┘
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:02)──○ jreydman --whoishe                                                              ○──(Fri,Jul24)─┘
 I'm a Software Engineer (with experience in Virtualization, Unix, Automatic), Fullstack Developer
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:03)──○ eymen --info                                                                 ○──(Fri,Mar18)─┘
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:03)──○ jreydman --info                                                                 ○──(Fri,Jul24)─┘
 I'm Oleksandr Mavrynskyi (somewhere knowns like Pikj Reyderman).
 I use Computer min 10 hours daily since I was 4 years old, I'm -proudly-
-the tech guy of my friends and family. I love boxing, Muaythai, and anything that helps in real fights.
-I love running too, my only source of happiness after the Holy Quran. I'm also interested in Arabic literature
-and human psychology, I'm just good at them with no effort. I also have a unique hobby, which is learning
-escaping techniques, breaking into locked stuff, surviving extremely harsh environments, staying anonymous... etc,
-you can say, real-life hacking.
+the tech guy of my friends and family. I love reading, guitar, and anything that helps in real fights.
+I leaf through anything I can get my hands on, but I usually prefer journalism and documentation on circuitry and hardware systems.
+I also have a unique hobby, which is learning
+I'm not attracted to autobiographical topics and psychology because I think it's sophistry and a waste of time.
+In my spare time, I hang out on benchmarks for new developments and chat with coworkers.
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:04)──○ eymen --education                                                            ○──(Fri,Mar18)─┘
-I've got accepted into Tufts University, CompSci, class of 2027. But couldn't travel out there for some
-reasons, and not thinking about joining college anymore.
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:04)──○ jreydman --education                                                            ○──(Fri,Jul24)─┘
+I've got accepted into NURE, class of 2024. Yeah, just finished a long period of my life as a student. But I also have a desire to continue and get a master's degree, maybe try my hand at teaching.
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:05)──○ eymen --skills -icons                                                        ○──(Fri,Mar18)─┘
-⚙ JavaScript  ⚙ TypeScript ⚙ PHP        ⚙ Node       ⚙ Laravel     ⚙ Vue         ⚙ NestJS
-⚙ Svelte      ⚙ ExpressJS  ⚙ PostgreSQL ⚙ MySQL      ⚙ MongoDB     ⚙ Redis
-⚙ tailwind    ⚙ Pinia      ⚙ Storybook  ⚙ Alpine.js  ⚙ jQuery      ⚙ GraphQL
-⚙ Nuxt.js     ⚙ Astro      ⚙ gRPC       ⚙ NPM        ⚙ Firebase    ⚙ git
-⚙ Linux       ⚙ Figma      ⚙ Docker     ✦ Web Sec    ✦ Pentesting  ✦ bug hunting 
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:05)──○ jreydman --skills -icons                                                        ○──(Fri,Jul24)─┘
+⚙ JavaScript  ⚙ TypeScript ⚙ PHP        ⚙ Node       ⚙ Symphony    ⚙ Vue
+⚙ ExpressJS   ⚙ PostgreSQL ⚙ MySQL      ⚙ MongoDB    ⚙ Redis       ⚙ NestJS
+⚙ tailwind    ⚙ Pinia      ⚙ GraphQL    ⚙ Zustand    ⚙ Context     ⚙ Bash
+⚙ Nuxt.js     ⚙ K8s        ⚙ gRPC       ⚙ NPM        ⚙ Firebase    ⚙ git
+⚙ Linux       ⚙ Nginx      ⚙ Docker     ✦ Web Sec    ✦ Pentesting  ✦ bug hunting 
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:06)──○ eymen --project -list                                                        ○──(Fri,Mar18)─┘
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:06)──○ jreydman --project -list                                                        ○──(Fri,Jul24)─┘
 1. Modular Backend
 2. SAM Stack (https://stackshare.io/eymen/sam).
-3. Modular Visual Panel
-4. Webducks (or the CJO)
-5. ... (there's more but still private)
+3. Cluster architecture
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:07)──○ cat interests.txt                                                            ○──(Fri,Mar18)─┘
-Not declared yet
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(bibaalterhubrz@WebDucks:pts/0)─┐
+└─(12:00:07)──○ cat interests.txt                                                            ○──(Fri,Jul24)─┘
+Music
+Reading
+Learning
  
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:08)──○ grep -i contact info.txt                                                     ○──(Fri,Mar18)─┘
-🔗: https://linktr.ee/eymeen
-📷: @deveymen
-🤙🏻: +905384600675
-📧: eymeneid@gmail.com
-💼: https://upwork.com/users/eymen
-𝕏 : https://x.com/eymen_eid
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:08)──○ grep -i contact info.txt                                                     ○──(Fri,Jul24)─┘
+🔗: https://t.me/jreydman
+📷: @jreydman
+🤙🏻: +380955804468
+📧: pikj.reyderman@gmail.com
+💼: https://alterworld.pp.ua
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:09)──○ pwd                                                                          ○──(Fri,Mar18)─┘
-practicing algorithms and data structures
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:09)──○ pwd                                                                          ○──(Fri,Jul24)─┘
+Web3 techs > NFC module nesting and networks
 
-┌─(~/github@eymeen)─────────────────────────────────────────────────────────────────(bibarz@WebDucks:pts/0)─┐
-└─(12:00:10)──○ date                                                                         ○──(Fri,Mar18)─┘
-Mon Jul 31 12:00:10 +03 2023
+┌─(~/github@jreydman)─────────────────────────────────────────────────────────────────(alterhub@WebDucks:pts/0)─┐
+└─(12:00:10)──○ date                                                                         ○──(Fri,Jul24)─┘
+Tue Jul  9 17:47:45 EEST 2024
                                         
 ```
-
-<div align="center">
-
-## Created by: Eymen
-</div>
-
-[//]: # ( Creator Profile ⬇️)
-<div align="center">
-<a href="https://Github.com/Eymeen#README">
-<img src="profile.png" alt="Eymeen's README.md" width="220">
-</a>
 </div>
