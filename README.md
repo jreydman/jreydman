@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://Github.com/jreydman#README">
-<img src="Avatar Rounder.png" alt="jreydman's README.md" width="120">
+<img src="assets/rounded_avatar.png" alt="jreydman's README.md" width="120">
 </a>
 </div>
 
