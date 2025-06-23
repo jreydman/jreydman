@@ -1,6 +1,6 @@
 {
   "name": "jreydman-resume-site",
-  "private": true,
+  "homepage": "https://jreydman.github.io/jreydman/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
