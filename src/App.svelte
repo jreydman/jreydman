@@ -1,5 +1,5 @@
 <script lang="ts">
-  import avatar from "./assets/rounded_avatar.png";
+  import avatarImage from "./assets/rounded_avatar.png";
   import * as Tabs from "$lib/components/ui/tabs/index.js";
   import * as Avatar from "$lib/components/ui/avatar/index.js";
   import * as Accordion from "$lib/components/ui/accordion/index.js";
@@ -14,6 +14,7 @@
     Linkedin,
   } from "@lucide/svelte";
   import Button from "$lib/components/ui/button/button.svelte";
+  import AboutTab from "./tabs/AboutTab.svelte";
   const contacts = $state([
     { icon: Mail, label: "EMAIL", value: "pikj.reyderman@gmail.com" },
     { icon: Phone, label: "PHONE", value: "+380955804468" },
@@ -28,7 +29,7 @@
   ]);
 
   const tabs = $state([
-    { label: "About", value: "about" },
+    { label: "About", value: "about", page: AboutTab },
     { label: "Resume", value: "resume" },
     { label: "Portfolio", value: "portfolio" },
     { label: "Blog", value: "blog" },
@@ -48,8 +49,6 @@
 
     return () => window.removeEventListener("resize", checkScreenSize);
   });
-
-  const tabProps = { class: "" };
 </script>
 
 <main class="container mx-auto px-2 pt-4 flex xl:flex-row flex-col gap-4">
@@ -58,7 +57,7 @@
       <Accordion.Item value="contacts-cord">
         <div class="flex gap-4 ml-4">
           <Avatar.Root class="size-20 my-2">
-            <Avatar.Image src={avatar} alt="avatar" />
+            <Avatar.Image src={avatarImage} alt="avatar" />
           </Avatar.Root>
 
           <!-- <img src={avatar} class="size-24 mt-4 my-2 ml-4" alt="avatar" /> -->
@@ -124,14 +123,10 @@
         {/each}
       </Tabs.List>
     </div>
-    <!-- --------------------------------- -->
-    <Tabs.Content value="about">About</Tabs.Content>
-    <!-- --------------------------------- -->
-    <Tabs.Content value="resume">Resume</Tabs.Content>
-    <!-- --------------------------------- -->
-    <Tabs.Content value="blog">Blog</Tabs.Content>
-    <!-- --------------------------------- -->
-    <Tabs.Content value="portfolio">Portfolio</Tabs.Content>
-    <!-- --------------------------------- -->
+    {#each tabs as tab}
+      <Tabs.Content class="min-h-48 px-4 pb-4" value={tab.value}>
+        <tab.page />
+      </Tabs.Content>
+    {/each}
   </Tabs.Root>
 </main>
