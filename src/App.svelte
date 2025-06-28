@@ -15,6 +15,8 @@
   } from "@lucide/svelte";
   import Button from "$lib/components/ui/button/button.svelte";
   import AboutTab from "./tabs/AboutTab.svelte";
+  import ResumeTab from "./tabs/ResumeTab.svelte";
+
   const contacts = $state([
     { icon: Mail, label: "EMAIL", value: "pikj.reyderman@gmail.com" },
     { icon: Phone, label: "PHONE", value: "+380955804468" },
@@ -30,7 +32,7 @@
 
   const tabs = $state([
     { label: "About", value: "about", page: AboutTab },
-    { label: "Resume", value: "resume" },
+    { label: "Resume", value: "resume", page: ResumeTab },
     { label: "Portfolio", value: "portfolio" },
     { label: "Blog", value: "blog" },
   ]);
@@ -55,18 +57,23 @@
   <div class="bg-secondary rounded-3xl border xl:max-w-64 max-w-full">
     <Accordion.Root type="single" value={accordionValue}>
       <Accordion.Item value="contacts-cord">
-        <div class="flex gap-4 ml-4">
-          <Avatar.Root class="size-20 my-2">
-            <Avatar.Image src={avatarImage} alt="avatar" />
-          </Avatar.Root>
-
-          <!-- <img src={avatar} class="size-24 mt-4 my-2 ml-4" alt="avatar" /> -->
-          <div class="my-auto flex-1 basis-1">
-            <div class="max-w-min">
-              <h1 class="text-xl text-center">JReydman</h1>
-              <Badge variant="outline">Software developer</Badge>
+        <div class="flex gap-4 ml-4 xl:ml-0">
+          <!-- --------------- -->
+          <div
+            class="w-full flex flex-row xl:flex-col items-center my-0 xl:my-2"
+          >
+            <Avatar.Root class="mx-auto size-20 my-2">
+              <Avatar.Image src={avatarImage} alt="avatar" />
+            </Avatar.Root>
+            <!-- --------------- -->
+            <div class="my-auto flex-1 basis-1">
+              <div class="max-w-min">
+                <h1 class="text-xl text-center">JReydman</h1>
+                <Badge variant="outline">Software developer</Badge>
+              </div>
             </div>
           </div>
+          <!-- --------------- -->
           <div class="relative">
             <Accordion.Trigger
               class="xl:hidden absolute p-2 bg-accent-foreground rounded-none rounded-bl-xl rounded-tr-3xl right-0 top-0"
@@ -76,6 +83,7 @@
               >
             </Accordion.Trigger>
           </div>
+          <!-- --------------- -->
         </div>
         <Accordion.Content class="py-0">
           <div class="mx-4">
@@ -108,7 +116,7 @@
       </Accordion.Item>
     </Accordion.Root>
   </div>
-  <Tabs.Root value="about" class="bg-secondary rounded-3xl border flex-1">
+  <Tabs.Root value="resume" class="bg-secondary rounded-3xl border flex-1">
     <!-- --------------------------------- -->
     <div class="flex justify-end">
       <Tabs.List
