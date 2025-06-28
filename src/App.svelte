@@ -16,6 +16,7 @@
   import Button from "$lib/components/ui/button/button.svelte";
   import AboutTab from "./tabs/AboutTab.svelte";
   import ResumeTab from "./tabs/ResumeTab.svelte";
+  import PortfolioTab from "./tabs/PortfolioTab.svelte";
 
   const contacts = $state([
     { icon: Mail, label: "EMAIL", value: "pikj.reyderman@gmail.com" },
@@ -33,7 +34,7 @@
   const tabs = $state([
     { label: "About", value: "about", page: AboutTab },
     { label: "Resume", value: "resume", page: ResumeTab },
-    { label: "Portfolio", value: "portfolio" },
+    { label: "Portfolio", value: "portfolio", page: PortfolioTab },
     { label: "Blog", value: "blog" },
   ]);
 
@@ -54,7 +55,9 @@
 </script>
 
 <main class="container mx-auto px-2 pt-4 flex xl:flex-row flex-col gap-4">
-  <div class="bg-secondary rounded-3xl border xl:max-w-64 max-w-full">
+  <div
+    class="h-fit bg-secondary rounded-3xl border xl:max-w-64 max-w-full xl:sticky xl:top-4"
+  >
     <Accordion.Root type="single" value={accordionValue}>
       <Accordion.Item value="contacts-cord">
         <div class="flex gap-4 ml-4 xl:ml-0">
@@ -98,7 +101,17 @@
                     <p class="text-[8pt]">
                       {contact.label}
                     </p>
-                    <p class="font-semibold truncate">{contact.value}</p>
+                    {#if contact.label == "PHONE"}
+                      <a href="tel:{contact.value}">
+                        <p class="font-semibold truncate">{contact.value}</p>
+                      </a>
+                    {:else if contact.label == "EMAIL"}
+                      <a href="mailto:{contact.value}">
+                        <p class="font-semibold truncate">{contact.value}</p>
+                      </a>
+                    {:else}
+                      <p class="font-semibold truncate">{contact.value}</p>
+                    {/if}
                   </div>
                 </div>
               {/each}
@@ -116,7 +129,7 @@
       </Accordion.Item>
     </Accordion.Root>
   </div>
-  <Tabs.Root value="resume" class="bg-secondary rounded-3xl border flex-1">
+  <Tabs.Root value="portfolio" class="bg-secondary rounded-3xl border flex-1">
     <!-- --------------------------------- -->
     <div class="flex justify-end">
       <Tabs.List
