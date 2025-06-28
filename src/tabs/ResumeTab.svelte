@@ -36,6 +36,11 @@
       date: "2020 - 2024",
       desc: "Computer Engineering",
     },
+    {
+      label: "NURE University | Master",
+      date: "2024 - present",
+      desc: "Computer Engineering",
+    },
   ]);
 
   const expirienceList = $state([
