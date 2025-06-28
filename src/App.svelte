@@ -17,6 +17,7 @@
   import AboutTab from "./tabs/AboutTab.svelte";
   import ResumeTab from "./tabs/ResumeTab.svelte";
   import PortfolioTab from "./tabs/PortfolioTab.svelte";
+  import BlogTab from "./tabs/BlogTab.svelte";
 
   const contacts = $state([
     { icon: Mail, label: "EMAIL", value: "pikj.reyderman@gmail.com" },
@@ -35,7 +36,7 @@
     { label: "About", value: "about", page: AboutTab },
     { label: "Resume", value: "resume", page: ResumeTab },
     { label: "Portfolio", value: "portfolio", page: PortfolioTab },
-    { label: "Blog", value: "blog" },
+    { label: "Blog", value: "blog", page: BlogTab },
   ]);
 
   let isXlScreen = $state(false);
@@ -129,7 +130,7 @@
       </Accordion.Item>
     </Accordion.Root>
   </div>
-  <Tabs.Root value="portfolio" class="bg-secondary rounded-3xl border flex-1">
+  <Tabs.Root value="about" class="bg-secondary rounded-3xl border flex-1">
     <!-- --------------------------------- -->
     <div class="flex justify-end">
       <Tabs.List
